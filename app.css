@@ -51,12 +51,10 @@ header h1 {
 
 .nav-list {
     list-style: none;
-    display: flex;
-    justify-content: center;
 }
 
 .nav-list li {
-    position: relative;
+    float: left;
     margin: 0 50px;
 }
   
@@ -69,12 +67,6 @@ header h1 {
 
 .navbar a:hover{
     color: hsl(0, 0%, 100%);
-}
-
-#tekst{
-    margin-top: 10px;
-    margin-left: 15px;
-    animation: bounce 1.5s ease forwards;
 }
 
 .navbar hr {
@@ -220,15 +212,6 @@ p {
     color: hsl(0, 0%, 0%);
 }
 
-#ContactHR{
-    width: 60%;
-    color: #4f6768;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 230px;
-    animation: bounce 1.5s ease forwards;
-}
-
 #project1-border{
     color: #4f6768;
     width: 16%;
@@ -246,7 +229,7 @@ p {
 footer{
     text-align: right;
     padding-top: 50px;
-    padding-right: 105px;
+    padding-right:105px;
     animation: bounce 1.5s ease forwards;
 }
 
@@ -272,6 +255,7 @@ footer{
 
 .icon{
     color: #4f6768;
+    position:sticky;
 }
 
 #icon1{
@@ -284,7 +268,6 @@ footer{
 
 #intro{
     padding-top: 20px;
-    text-align:left;
     animation: bounce 1.5s ease forwards;
 }
 
@@ -297,7 +280,6 @@ footer{
 .tekst{
     padding-left: 180px;
     padding-right: 180px;
-    text-align:left;
     animation: bounce 1.5s ease forwards;
 }
 
@@ -332,4 +314,19 @@ footer{
     100% {
         transform: translateY(0);
     }
+}
+
+@media screen and (max-width:1200px){
+    .icon{padding:0px;}
+}
+@media screen and (max-width:800px){
+    p{width: 100%;}
+    .tekst { padding:0px; text-align:left;}
+    .container{max-width: 100%}
+    .slideshow-container{width:70%;}
+    .icon{align-items:right; visibility:hidden;}
+    .footer-top, .footer-bottom{width: 100%; position:relative; visibility:hidden;}
+    .navbar{text-align:center;}
+    .project-titel{padding:0px; text-align:left;}
+    .buffer{visibility: hidden;}
 }
