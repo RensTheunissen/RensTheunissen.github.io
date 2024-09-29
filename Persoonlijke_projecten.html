@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="app.css"/>
+    <title>Rens Theunissen</title>
+    <meta cahrset="UTF-8">
+    <meta name="description" content="Rens Theunissen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2e874be8b1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Rens Theunissen</h1>
+        </header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li id="home"><a href="Home.html">Home</a></li>
+                <li id="projects"><a href="Persoonlijke_projecten.html" class="current">Persoonlijke projecten</a><hr></li>
+                <li id="contact"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <p id= "intro" class="tekst">In mijn jeugd heb ik vaak met mijn vader, een elektrotechnisch ingenieur, zitten knutselen en prutsen met simpele elektrische circuits. Dan 
+            moet je denken aan een knipperend LED of een deurbel. Naarmate ik wat ouder werd is dit minder geworden, maar ik heb het tijdens mijn tijd als student zelf 
+            weer opgepakt, alleen nu wat complexer. Na mijn aanschaf van een simpele 3D printer en een Raspberry Pi kon ik alles maken wat ik me maar kon bedenken. Dit 
+            heeft ertoe geleid dat ik mezelf uitdaag om grote projecten aan te pakken, hieronder laat ik er een paar van zien.</p>
+
+        <h2 class="project-titel">Spelcomputer<hr id="project1-border"></h2>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides1 fade">
+                <div class="caption">3D ontwerp van de binnenkant van de spelcomputer</div>
+                <img src="fotos/Console model.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides1 fade">
+                <div class="caption">Geschuurde onderdelen van de spelcomputer</div>
+                <img src="fotos/Geschuurde behuizing.jpeg" style="width:100%">
+            </div>
+        
+            <div class="mySlides1 fade">
+                <div class="caption">Printplaten voor de spelcomputer</div>
+                <img src="fotos/Printplaten.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides1 fade">
+                <div class="caption">Alle onderdelen van de spelcomputer nodig voor de montage</div>
+                <img src="fotos/Bouw van console.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1 fade">
+                <div class="caption">Eindproduct</div>
+                <img src="fotos/Spelcomputer eind.JPG" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot1" onclick="currentSlide(1, 0)"></span>
+            <span class="dot1" onclick="currentSlide(2, 0)"></span>
+            <span class="dot1" onclick="currentSlide(3, 0)"></span>
+            <span class="dot1" onclick="currentSlide(4, 0)"></span>
+            <span class="dot1" onclick="currentSlide(5, 0)"></span>
+        </div>
+          
+        <p class="tekst">Ik vind het soms wel eens leuk om een oud spel te spelen: "Mike Tysons Punch-out", "Lode Runner" of een oud Pokémon spelletje. Hiervoor moet je een emulator 
+            voor gebruiken als je de originele spelcomputer niet hebt, in mijn geval gebruikte ik mijn Raspberry Pi. Maar dit was altijd veel gedoe, je moest dat apparaat in het 
+            stopcontact steken, hem aansluiten op een TV en eventueel nog een keyboard en muis er in steken als je de emulator zelf moest opstarten. Dit vormde voor mij een grote 
+            barrière, waardoor ik deze spelletjes steeds minder speelde. Dat vond ik jammer en dus besloot ik de barrière te verkleinen door de Pi in een "Handheld" spelcomputer te 
+            veranderen.</p>
+
+        <p id="paragraaf" class="tekst">Dit begon met een lijst maken van de onderdelen die ik nodig had: scherm, batterij, knoppen etc. Daarna begon de ontwerp fase van de 
+            spelcomputer waar ik met behulp van Solid Edge en KiCAD de 3D modellen en printplaten bouwde. Toen het eerste 3D ontwerp klaar was, begon ik met onderdelen printen. Dit is 
+            over het algemeen de langste fase van elk project, want je eerste ontwerp is altijd fout. Het kan zijn dat je zelf ontwerp fouten hebt gemaakt of het printen van de 
+            onderdelen leidt tot ongewenste krommingen in het plastic. Wat het ook is, je moet je model aanpassen en opnieuw printen, wat tijd kost. Als voorbeeld: het printen van het grootste 
+            onderdeel van de spelcomputer duurde 2.5 dagen. Nadat alles correct was geprint heb ik de elektronica gesoldeerd en de geprinte onderdelen in elkaar geschroefd. De 
+            spelcomputer zelf was toen af, maar er moest nog wat software geschreven worden (in Batch en Python) om alle onderdelen goed te laten werken en om wat extra 
+            functionaliteiten toe te voegen.</p>
+            
+
+        <h2 class="project-titel">Werkende Pokédex<hr id="project2-border"></h2>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+    
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides2 fade">
+                <div class="caption">Confusion matrix (in procent) van model getraind op de eerste 68 pokemon + "Pikachu"</div>
+                <img src="fotos/69 pokemon confusion matrix.png" style="width:100%">
+                
+            </div>
+            
+            <div class="mySlides2 fade">
+                <div class="caption">Voorspelling van model getraind op de eerste 68 pokemon + "Pikachu"</div>
+                <img src="fotos/Voorspellingen.png" style="width:100%">
+                
+            </div>
+            
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <br>
+            
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot2" onclick="currentSlide(1, 1)"></span>
+            <span class="dot2" onclick="currentSlide(2, 1)"></span>
+        </div>
+        
+        <p class="tekst">Mijn huidige project startte toen ik op YouTube een video tegenkwam van iemand die een echt werkende Pokédex maakte. Het apparaatje gebruikte object 
+            detectie om in foto's die je met het apparaat maakte Pokémons te detecteren met behulp van chatGPT. Ik vond dat super gaaf, maar ik dacht ook dat ik het zelf nog cooler 
+            kon maken. Ik vond vooral het gebruik van chatGPT limiterend: het werkt dan alleen als je internet verbinding hebt, terwijl je naar mijn gevoel zo'n apparaat mee naar 
+            buiten wilt nemen. Ik ben dus zelf bezig met het bouwen en trainen van een neural network in Python met behulp van de Tensorflow bibliotheek. Hierboven laat ik een 
+            paar tussentijdse resultaten van het model zien.
+        </p>
+        <hr class="footer-top">
+        <footer>  
+            <a id="icon1" href="mailto:rens.theunissenwerk@gmail.com" class="icon" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+            <a id="icon2" href="https://www.linkedin.com/in/rens-theunissen/" class="icon" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>   
+        </footer>  
+        <hr class="footer-bottom">
+        <p class="buffer">h</p> 
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>

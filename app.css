@@ -1,0 +1,335 @@
+/* General reset and body styles */
+@font-face{
+    src: url(fonts/Bitter-VariableFont_wght.ttf);
+    font-family: Roboto-medium;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto-medium", arial;
+}
+
+body{
+    padding-top: 50px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: sticky;
+    border: 2px solid grey;
+    background-color: #f2f0e2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.navbar {
+    margin-top: 40px;
+    background-color: #4f6768;
+    padding: 10px 10px;
+    position: relative; /* Fix the navbar at the top */
+    left: 50%; /* Center the navbar horizontally */
+    transform: translateX(-50%); /* Centers the navbar relative to the screen */
+    z-index: 10; /* Ensures the navbar stays above other content */
+    border-radius: 15px;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    position: relative;
+    margin: 0 50px;
+}
+  
+.nav-list li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 70%);
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.navbar a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+#tekst{
+    margin-top: 10px;
+    margin-left: 15px;
+    animation: bounce 1.5s ease forwards;
+}
+
+.navbar hr {
+    height: 2px; /* Set a specific height */
+    background-color: hsl(0, 0%, 70%); /* Set the desired color */
+    height: 2px; /* Remove margin to prevent spacing */
+    width: 100%; /* Ensure it spans the full width of the navbar */
+    margin: 0;
+    border: none;
+}
+
+.navbar a.current{
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+#MijnFoto{
+    display: block;
+    padding-top: 30px;
+    margin: auto;
+    animation: bounce 1.5s ease forwards;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    margin: auto;
+    width: 55%;
+    padding-top: 30px;
+    display: block;
+    animation: bounce 1.5s ease forwards;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.caption {
+    color: hsl(0, 0%, 7%);
+    font-size: 15px;
+    position: relative;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+}
+  
+/* The dots/bullets/indicators */
+.dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: hsl(182, 14%, 65%);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    transition: background-color 0.6s ease;
+    animation: bounce 1.5s ease forwards;
+}
+
+/* The dots/bullets/indicators */
+.dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: hsl(182, 14%, 65%);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    transition: background-color 0.6s ease;
+    animation: bounce 1.5s ease forwards;
+}
+
+.dot1.active, .dot1:hover {
+    background-color: #4f6768;
+}
+
+.dot2.active, .dot2:hover {
+    background-color: #4f6768;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#MijnContact{
+    padding-top: 90px;
+    padding-bottom: 20px;
+    text-align: center;
+    animation: bounce 1.5s ease forwards;
+
+}
+
+#LinkedIn{
+    padding-top: 7px;
+    padding-bottom: 10px;
+    text-align: center;
+    animation: bounce 1.5s ease forwards;
+}
+
+#contactLink{
+    color: #4f6768;
+}
+
+#contactLink:hover{
+    color: hsl(0, 0%, 0%);
+}
+
+#ContactHR{
+    width: 60%;
+    color: #4f6768;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 230px;
+    animation: bounce 1.5s ease forwards;
+}
+
+#project1-border{
+    color: #4f6768;
+    width: 16%;
+    margin-top: 10px;
+    animation: bounce 1.5s ease forwards;
+}
+
+#project2-border{
+    color: #4f6768;
+    width: 22.2%;
+    margin-top: 10px;
+    animation: bounce 1.5s ease forwards;
+}
+
+footer{
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 105px;
+    animation: bounce 1.5s ease forwards;
+}
+
+.footer-top{
+    position: absolute;
+    color: #4f6768;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 95px;
+    margin-bottom: 20px;
+    animation: bounce 1.5s ease forwards;
+}
+
+.footer-bottom{
+    position: absolute;
+    color: #4f6768;
+    width: 80%;
+    margin-left: 95px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    animation: bounce 1.5s ease forwards;
+}
+
+.icon{
+    color: #4f6768;
+}
+
+#icon1{
+    margin-right:5px;
+}
+
+.icon:hover{
+    color: hsl(0, 0%, 0%);
+}
+
+#intro{
+    padding-top: 20px;
+    text-align:left;
+    animation: bounce 1.5s ease forwards;
+}
+
+.project-titel{
+    padding-left: 180px;
+    padding-top: 20px;
+    animation: bounce 1.5s ease forwards;
+}
+
+.tekst{
+    padding-left: 180px;
+    padding-right: 180px;
+    text-align:left;
+    animation: bounce 1.5s ease forwards;
+}
+
+#paragraaf{
+    padding-top: 7px;
+}
+
+.buffer{
+    color: #f2f0e2;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* Keyframes for smooth bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    70% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
