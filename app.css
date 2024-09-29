@@ -323,7 +323,7 @@ footer{
     .slideshow-container{width:70%;}
     .icon{align-items:right; visibility:hidden;}
     .footer-top, .footer-bottom{width: 100%; position:relative; visibility:hidden;}
-    .nav-list li{float: none;}
+    .nav-list li{float: none; padding:auto; text-align:center;}
     .nav-list li a{padding:0px;}
     .navbar {display:block;}
     .navbar hr{visibility:hidden}
